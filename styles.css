@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-container {
+  width: 40%;
+  color: #fff;
+}
+
+.left-container .text-1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.right-container {
+  width: 40%;
+}
+
+.right-container .top-box {
+    color: #fff;
+        font-size: 0.9rem;
+  background: hsl(248, 32%, 49%);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0.5rem rgba(140, 137, 137, 0.4);
+}
+
+.right-container span {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.form-container {
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0 0.5rem rgba(140, 137, 137, 0.4);
+}
+
+.form-field {
+  position: relative;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 2px solid hsl(246, 25%, 77%);
+  margin: 20px 0px;
+}
+
+.error-icon,
+.error-text {
+  display: none;
+}
+
+.error-icon {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+}
+
+.error-text {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  font-size: 0.7rem;
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+  font-style: italic;
+}
+
+.form-field.error .error-text,
+.form-field.error .error-icon {
+  display: block;
+}
+
+.form-field.error input {
+  border: 2px solid hsl(0, 100%, 74%);
+}
+
+
+button {
+  cursor: pointer;
+  background: hsl(154, 59%, 51%);
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+}
+
+.form-footer {
+  color: hsl(246, 25%, 77%);
+  font-size: 0.65rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.form-footer span {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: hsl(0, 100%, 74%);
+}
+
+@media (max-width: 768px) {
+    body {
+            background: url(./images/bg-intro-mobile.png);
+            background-color: hsl(0, 100%, 74%);
+        }
+    
+        main {
+            flex-direction: column;
+            padding: 50px 0px;
+        }
+    
+        .left-container {
+            text-align: center;
+        }
+    
+        .right-container .top-box {
+            margin-top: 50px;
+            padding: 20px;
+        }
+    
+        .left-container {
+            width: 100%;
+        }
+    
+        .right-container {
+            width: 100%;
+        }
+}
